@@ -4,28 +4,56 @@
     <title>Home - Custard</title>
     <link rel="stylesheet" href="https://unpkg.com/mvp.css@1.12/mvp.css" />
     <style>
-      :root[color-mode="user"] {
+      :root {
         --color-accent: #0097fc4f;
-        --color-bg: #333;
-        --color-bg-secondary: #555;
-        --color-link: #0097fc;
+        --color-bg: #282a36;
+        --color-bg-secondary: #44475a;
+        --color-link: #ff79c6;
         --color-secondary: #e20de9;
-        --color-secondary-accent: #e20de94f;
+        --color-secondary-accent: #bd93f9;
         --color-shadow: #bbbbbb20;
         --color-table: #0097fc;
-        --color-text: #f7f7f7;
+        --color-text: #f8f8f2;
         --color-text-secondary: #aaa;
+      }
+
+      .text {
+        color: var(--color-text);
       }
     </style>
   </head>
   <body>
-    <h1>Custard</h1>
-    <p><b>A <u>work in progress</u> package manager for Node.js.</p>
-    
-    <h2>Currently implemented commands</h2>
-    <ul>
-      <li><pre>init</pre></li>
-      <li><pre>run</pre></li>
-    </ul>
+    <header>
+      <nav>
+        <a href="/" class="text">Custard</a>
+        <ul>
+          <li><a href="https://github.com/custard-pkg/custard">GitHub</a></li>
+        </ul>
+      </nav>
+      <h1>Custard</h1>
+      <p>A <b>work in progress</b> package manager for Node.js.</p>
+      <br />
+      <p>
+        <a href="https://github.com/custard-pkg/custard"
+          ><b>Visit the GitHub</b></a
+        >
+      </p>
+    </header>
+    <main>
+      <h2>Currently implemented commands</h2>
+      <ul>
+        <li>
+          <code>run</code>
+          <i>Mostly</i> finished. The only thing that's left is the
+          <code>NODE</code> and <code>package.json</code> environment variables.
+        </li>
+        <li>
+          <code>init</code>
+          Doesn't support installing commands to initialize projects (e.g.
+          <code>npm init react-app</code>), and doesn't have some of the smarts
+          that <code>npm</code> has.
+        </li>
+      </ul>
+    </main>
   </body>
 </html>
